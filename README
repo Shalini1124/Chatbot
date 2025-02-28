@@ -1,0 +1,80 @@
+AI Chatbot 
+
+This is a simple AI-powered chatbot built with HTML, CSS, JavaScript (Frontend) and Python (FastAPI - Backend). The chatbot interacts with users by processing messages and providing AI-generated responses.
+
+
+📌 Features
+
+✅ Clean & Modern Chat UI
+✅ FastAPI Backend for AI responses
+✅ Smooth Animations & Responsive Design
+✅ User & Bot Messages Differentiation
+✅ Enter Key Support for Quick Messaging
+
+
+🏗️ Project Structure
+
+chatbot-project/
+│── frontend/
+│   ├── index.html             
+│── backend/
+|   |---- main.py
+│   ├── chatbot.py    
+|   ├── _init_.py
+│── README.md            
+
+
+🚀 Getting Started
+
+1️⃣ Clone the Repository
+
+git clone https://github.com/your-username/chatbot-project.git
+cd chatbot-project
+
+2️⃣ Install Dependencies
+
+Backend (FastAPI)
+
+pip install fastapi uvicorn requests
+
+Frontend (if using npm packages)
+
+npm install
+
+3️⃣ Run the Backend Server
+
+uvicorn chatbot:app --reload
+
+By default, it runs at: http://127.0.0.1:8000/chat
+
+4️⃣ Open index.html in Browser
+
+Simply open frontend/index.html to start using the chatbot! 🎉
+
+
+📡 API Endpoint
+
+POST /chat
+
+Sends a user question and receives an AI-generated response.
+
+Request:
+
+{
+  "question": "What is mparticle?"
+}
+
+Response:
+
+{
+  "answer": "Check mParticle docs here: https://docs.mparticle.com/."
+}
+
+
+🛠️ Technologies Used
+
+Frontend: HTML, CSS, JavaScript
+
+Backend: Python (FastAPI), Uvicorn
+
+API Requests: Fetch API (Frontend), Requests (Backend)
